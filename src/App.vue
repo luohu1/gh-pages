@@ -5,14 +5,8 @@
 </template>
 
 <style lang="less">
-html {
+html, body {
   height:100%;
-}
-body {
-  min-height: 100%;
-  margin: 0;
-  padding: 0;
-  position: relative;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

@@ -1,7 +1,6 @@
 <template>
   <a-layout id="basic-layout">
     <a-layout-header id="layout-header">
-      <div class="logo"/>
       <span>header</span>
     </a-layout-header>
     <a-layout-content  id="layout-content">
@@ -22,25 +21,24 @@ export default {
 </script>
 
 <style scoped lang="less">
-.mixin-style {
+.mixin-style() {
+  height: 50px;
+  padding: 15px 0;
   background: #333;
   font-size: 14px;
   color: #ffffff;
-  padding: 15px 0;
   text-align: center;
 }
 #basic-layout {
   #layout-header {
     .mixin-style();
+    line-height: normal;
   }
   #layout-content {
-    height: 100%;
+    min-height: calc(100vh - 100px);
   }
   #layout-footer {
     .mixin-style();
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
   }
 }
 </style>
