@@ -3,15 +3,17 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import {
-  Layout
+  Layout,
+  Menu,
 } from 'ant-design-vue'
 
 Vue.use(Layout)
+Vue.use(Menu)
 
 Vue.config.productionTip = false
 
 new Vue({
   router,
   store,
-  render: h => h(App)
+  render: h => h(App),
 }).$mount('#app')
