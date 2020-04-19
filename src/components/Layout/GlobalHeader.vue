@@ -1,9 +1,12 @@
 <template>
-  <div class="header">
+  <header>
     <div class="logo">
-      <span>Logo</span>
+      <a href="/">
+        <img alt="logo" src="@/assets/logo.png" />
+        ipyth.com
+      </a>
     </div>
-    <div class="container">
+    <div class="nav-menu">
       <a-menu class="menu" mode="horizontal" theme="dark">
         <a-menu-item key="docs" class="menu-item">
           <a href="/docs/">Docs</a>
@@ -13,7 +16,7 @@
         </a-menu-item>
       </a-menu>
     </div>
-  </div>
+  </header>
 </template>
 
 <script>
@@ -26,8 +29,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.header {
-  height: 50px;
+header {
   width: 1000px;
   padding-right: 15px;
   padding-left: 15px;
@@ -40,16 +42,25 @@ export default {
   .logo {
     width: 200px;
     float: left;
-    line-height: 50px;
+    a {
+      font-size: 1.3rem;
+      font-weight: 500;
+      color: inherit;
+      line-height: 1;
+      img {
+        height: 2.2rem;
+        min-width: 2.2rem;
+        margin-right: 0.8rem;
+      }
+    }
   }
-  .container {
+  .nav-menu {
     width: 600px;
     padding-left: 200px;
     .menu {
-      background: #333;
+      background: inherit;
       .menu-item {
-        height: 50px;
-        line-height: 50px;
+        line-height: inherit;
       }
     }
   }
