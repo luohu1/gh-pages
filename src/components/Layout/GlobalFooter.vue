@@ -1,7 +1,7 @@
 <template>
-  <div class="footer">
+  <footer>
     <span>Copyright ©2020 LH</span>
-  </div>
+  </footer>
 </template>
 
 <script>
@@ -14,10 +14,9 @@ export default {
 </script>
 
 <style scoped lang="less">
-.footer {
+footer {
   padding: 15px 0;
   height: 50px;
-  background: #333;
   font-size: 14px;
   color: #ffffff;
   text-align: center;
