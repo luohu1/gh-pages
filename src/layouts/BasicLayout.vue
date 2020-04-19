@@ -1,13 +1,13 @@
 <template>
   <a-layout id="basic-layout">
-    <a-layout-header :style="{padding: 0, height: '50px', background: '#333'}">
+    <a-layout-header id="layout-header">
       <global-header />
     </a-layout-header>
     <a-layout-content id="layout-content">
-      <span>content</span>
+      <h1>Welcome!</h1>
       <router-view></router-view>
     </a-layout-content>
-    <a-layout-footer :style="{padding: 0}">
+    <a-layout-footer id="layout-footer">
       <global-footer />
     </a-layout-footer>
   </a-layout>
@@ -27,8 +27,21 @@ export default {
 
 <style scoped lang="less">
 #basic-layout {
+  #layout-header {
+    height: 50px;
+    padding: 0;
+    line-height: 50px;
+    background-color: #24292e;
+  }
   #layout-content {
+    padding: 15px;
+    text-align: center;
     min-height: calc(100vh - 100px);
+  }
+  #layout-footer {
+    height: 50px;
+    padding: 0;
+    background-color: #24292e;
   }
 }
 </style>
