@@ -12,7 +12,7 @@
           <a href="/docs/">Docs</a>
         </a-menu-item>
         <a-menu-item class="menu-item">
-          <span>Others</span>
+          <router-link to="other">Others</router-link>
         </a-menu-item>
       </a-menu>
     </nav>
