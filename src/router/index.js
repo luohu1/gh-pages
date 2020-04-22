@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-// import Home from '../views/Home.vue'
 import BasicLayout from '@/layouts/BasicLayout'
 
 Vue.use(VueRouter)
@@ -10,6 +9,19 @@ const routes = [
     path: '/',
     name: 'Home',
     component: BasicLayout,
+    redirect: '/index',
+    children: [
+      {
+        name: 'Index',
+        path: 'index',
+        component: () => import('@/views/Index'),
+      },
+      {
+        name: 'Other',
+        path: 'other',
+        component: () => import('@/views/Other'),
+      },
+    ],
   },
 ]
 
