@@ -15,9 +15,7 @@ export default {
 
 <style scoped lang="less">
 footer {
-  padding: 15px 0;
-  height: 50px;
-  font-size: 14px;
+  line-height: 16px;
   color: #ffffff;
   text-align: center;
 }

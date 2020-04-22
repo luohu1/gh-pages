@@ -6,7 +6,7 @@
         ipyth.com
       </a>
     </div>
-    <div class="nav-menu">
+    <nav>
       <a-menu class="menu" mode="horizontal" theme="dark">
         <a-menu-item key="docs" class="menu-item">
           <a href="/docs/">Docs</a>
@@ -15,7 +15,7 @@
           <span>Others</span>
         </a-menu-item>
       </a-menu>
-    </div>
+    </nav>
   </header>
 </template>
 
@@ -31,12 +31,8 @@ export default {
 <style lang="less" scoped>
 header {
   width: 1000px;
-  padding-right: 15px;
-  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  font-size: 14px;
-  color: #ffffff;
   text-align: center;
 
   .logo {
@@ -45,7 +41,7 @@ header {
     a {
       font-size: 1.3rem;
       font-weight: 500;
-      color: inherit;
+      color: white;
       line-height: 1;
       img {
         height: 2.2rem;
@@ -54,14 +50,13 @@ header {
       }
     }
   }
-  .nav-menu {
+  nav {
     width: 600px;
     padding-left: 200px;
-    .menu {
-      background: inherit;
-      .menu-item {
-        line-height: inherit;
-      }
+
+    .menu-item {
+      height: 64px;
+      line-height: 60px;
     }
   }
 }

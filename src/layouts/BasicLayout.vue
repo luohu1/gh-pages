@@ -27,21 +27,10 @@ export default {
 
 <style scoped lang="less">
 #basic-layout {
-  #layout-header {
-    height: 50px;
-    padding: 0;
-    line-height: 50px;
-    background-color: #24292e;
-  }
   #layout-content {
     padding: 15px;
     text-align: center;
-    min-height: calc(100vh - 100px);
-  }
-  #layout-footer {
-    height: 50px;
-    padding: 0;
-    background-color: #24292e;
+    min-height: calc(100vh - 120px);
   }
 }
 </style>
