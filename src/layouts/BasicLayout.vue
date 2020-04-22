@@ -4,7 +4,6 @@
       <global-header />
     </a-layout-header>
     <a-layout-content id="layout-content">
-      <h1>Welcome!</h1>
       <router-view></router-view>
     </a-layout-content>
     <a-layout-footer id="layout-footer">
