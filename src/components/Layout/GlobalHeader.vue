@@ -1,21 +1,24 @@
 <template>
   <header>
-    <div class="logo">
-      <a href="/">
-        <img alt="logo" src="@/assets/logo.png" />
-        ipyth.com
-      </a>
-    </div>
-    <nav>
-      <a-menu class="menu" mode="horizontal" theme="dark">
-        <a-menu-item key="docs" class="menu-item">
-          <a href="/docs/">Docs</a>
-        </a-menu-item>
-        <a-menu-item class="menu-item">
-          <router-link to="other">Others</router-link>
-        </a-menu-item>
-      </a-menu>
-    </nav>
+    <a-row type="flex" justify="space-around" align="center">
+      <a-col class="logo" :span="4">
+        <a href="/">
+          <img alt="logo" src="@/assets/logo.png" />
+          ipyth.com
+        </a>
+      </a-col>
+      <a-col class="nav" :span="16">
+        <a-menu class="menu" mode="horizontal" theme="dark">
+          <a-menu-item key="docs" class="menu-item">
+            <a href="/docs/">Docs</a>
+          </a-menu-item>
+          <a-menu-item class="menu-item">
+            <router-link to="other">Others</router-link>
+          </a-menu-item>
+        </a-menu>
+      </a-col>
+      <a-col :span="4"> </a-col>
+    </a-row>
   </header>
 </template>
 
@@ -30,14 +33,10 @@ export default {
 
 <style lang="less" scoped>
 header {
-  width: 1000px;
+  width: 1152px;
   margin-right: auto;
   margin-left: auto;
-  text-align: center;
-
   .logo {
-    width: 200px;
-    float: left;
     a {
       font-size: 1.3rem;
       font-weight: 500;
@@ -50,10 +49,7 @@ header {
       }
     }
   }
-  nav {
-    width: 600px;
-    padding-left: 200px;
-
+  .nav {
     .menu-item {
       height: 64px;
       line-height: 60px;
