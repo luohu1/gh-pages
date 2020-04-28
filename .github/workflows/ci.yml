@@ -27,9 +27,8 @@ jobs:
         npm run build
 
     - name: Custom domain
-      run:
-        shell: echo 'www.ipyth.com' > CNAME
-        working-directory: dist
+      run: echo 'www.ipyth.com' > CNAME
+      working-directory: dist
 
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@releases/v3
